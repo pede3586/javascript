@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button id="myBut">reload</button>
+    <script>
+        const myBut = document.querySelector("#myBut");
+        console.log(myBut);
+        myBut.addEventListener("click", klik);
+
+        function klik() {
+            myBut.textContent = "Mer' klik"
+        }
+
+    </script>
+</body>
+
+</html>
