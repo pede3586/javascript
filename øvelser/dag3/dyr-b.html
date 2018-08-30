@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="dyr"></div>
+    <script>
+        dyr = {
+            "navn": "elefant",
+            "type": "pattedyr",
+            "levested": "Indien og Afrika"
+        }
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            document.querySelector(".dyr").textContent = `En ${dyr.navn} er et ${dyr.type}, som lever i ${dyr.levested}.`;
+        }
+        console.log(`En ${dyr.navn} er et ${dyr.type}, som lever i ${dyr.levested}.`)
+    </script>
+</body>
+
+</html>
