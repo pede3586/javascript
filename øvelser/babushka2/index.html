@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+    <!-- GOOGLE FONTS END -->
+
+    <title>Babushka3</title>
+</head>
+
+<body>
+
+    <!-- OVERALL GRID -->
+    <div class="grid">
+
+        <!-- HEADER -->
+        <header>
+            <h1>Bistro Babushka</h1>
+            <!-- NAVIGATION -->
+            <nav>
+                <button class="menu-item" data-kategori="alle">Alle</button>
+                <button class="menu-item" data-kategori="forretter">Forretter</button>
+                <button class="menu-item" data-kategori="hovedretter">Hovedretter</button>
+                <button class="menu-item" data-kategori="desserter">Desserter</button>
+                <button class="menu-item" data-kategori="drikkevarer">Drikkevarer</button>
+            </nav>
+            <!-- NAVIGATION END -->
+        </header>
+        <!-- HEADER END -->
+
+
+        <!-- MENU -->
+        <main class="retContainer"></main>
+        <template class="retTemplate">
+            <article class="ret" data-id="">
+                <h2 class = "overskrift" data-navn >---</h2>
+                <img class = "billede" data-billede src = ".---" alt = "---">
+                <p class="kortBeskrivelse" data-kortbeskrivelse>---</p>
+                <p>Pris: <span class="pris" data-pris >---</span> DKK , - </p>
+            </article>
+        </template>
+        <!-- MENU END -->
+        
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="information">
+                <p class="adress"><b>Addresse:</b><br> Grønnegade 97<br> 1234 København K</p>
+                <p class="schedule"><b>Åbningstider:</b><br> Mandag - fredag 10:30 - 22:00 <br>Lørdag 12:00 - 23:00</p>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+    <!-- OVERALL GRID END -->
+    
+    <!-- MODAL VIEW --> 
+    <div id="modal">
+        <div id="modal-content">
+            <button>Luk</button>
+            <h2 class="modal-navn">Test</h2>
+            <img class="modal-billede" src="" alt="">
+        </div>
+    </div>
+    <!-- MODAL VIEW END -->
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
